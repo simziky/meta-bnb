@@ -1,0 +1,116 @@
+.place {
+    padding: 0px 100px 90px 100px;
+
+    .filter {
+        margin-top: 130px;
+
+        nav {
+            display: inline-flex;
+            align-items: center;
+
+            ul {
+                list-style: none;
+                display: flex;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 25px;
+
+                li {
+                    margin-right: 3rem;
+                }
+            }
+
+            .filter-btn {
+                height: 48px;
+                width: 161px;
+                //display: inline-flex;
+               // justify-content: space-between;
+                border: 1px solid #B4B4B4;
+                border-radius: 8px;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 19px;
+                background-color: white;
+
+                &:hover {
+                    cursor: pointer;
+                }
+
+                span {
+                    margin-right: 40px;
+                }
+            }
+        }
+    }
+
+    .place-to-stay {
+      
+        .place-to-stay-inner {
+            width: 100%;
+            display: grid;
+            gap: 1.5rem;
+             grid-template-columns: repeat(4, 1fr); 
+             margin-top: 43px;
+    
+            .place-to-stay-card {
+                //width: fit-content;
+                padding: 16px;
+                border: 1px solid #D7D7D7;
+                border-radius: 15px;
+    
+                .card-img {
+                    overflow: hidden;
+                    
+                    img {
+                    //height: 265px;
+                    width: 100%;
+                    transition: 0.5s;
+    
+                    &:hover {
+                        transform: scale(1.2);
+                    }
+                    }
+                }
+    
+                .card-title1 {
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 100%;
+                    margin-top: 16px;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 13px;
+    
+                    bold {
+                        font-weight: 700;
+                        font-size: 12px;
+                        line-height: 13px;
+                    }
+                }
+    
+                .card-title2 {
+                    margin-top: 16px;
+                    display: inline-flex;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 13px;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 100%;
+                }
+    
+                .ratings {
+                    margin-top: 16px;
+                    color: #A02279;
+    
+                    span {
+                        font-size: 12px;
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+     }
+    
+}

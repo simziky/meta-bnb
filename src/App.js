@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from 'react-router-dom';
+import './App.scss';
+import Layout from './Layout/layout';
+import Home from './Pages/Home/home';
+import PlaceToStay from './Pages/placeToStay/placeToStay';
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faStar,faSliders, faXmark, faChevronRight} from "@fortawesome/free-solid-svg-icons";
+
+library.add( faStar,faSliders , faXmark, faChevronRight);
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Layout>
+        <Routes>
+
+          <Route path="/" element={<Home />} />
+          <Route path="/PlaceToStay" element={<PlaceToStay />} />
+
+        </Routes>
+     </Layout>
     </div>
   );
 }
