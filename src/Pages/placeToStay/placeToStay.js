@@ -17,11 +17,11 @@ import frame_7 from "../../images/card/Frame7.svg"
 import frame_8 from "../../images/card/Frame8.svg"
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-//import { useState } from "react";
+import { useState } from "react";
 
 const PlaceToStay = () => {
 
-    //const [isNavExpanded, setIsNavExpanded] = useState(false)
+    const [isNavLocation, setIsNavLocation] = useState(false)
 
     const placesToStay = [
         {id:1 , img: cimg_5, title:"Desert king", cost:"1MBT per night", distance:"2345km away" , available: "available for 2weeks stay" },
@@ -78,7 +78,7 @@ const PlaceToStay = () => {
         <section className="place">
             <div className="filter">
                 <nav>
-                    <ul>
+                    <ul className={isNavLocation ? "locationexpanded" : "locationnav"}>
                         <li>Resturant</li>
 
                         <li>Cottage</li>
@@ -96,7 +96,7 @@ const PlaceToStay = () => {
                         <li>Farm</li>
                     </ul>
 
-                    <button className="filter-btn">
+                    <button className="filter-btn" onClick={() => {setIsNavLocation(!isNavLocation);}}>
                         <span>Location</span>
                     <FontAwesomeIcon icon="fa-sliders" />
                     </button>
