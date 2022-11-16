@@ -142,12 +142,12 @@ header {
             position: absolute;
             display: flex;
             top: 60px;
-           
+           padding: 10px;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             width: 100%;
-            height:calc(50vh - 77px);
+            height:60vh ;
             background-color:#610a46;
 
             @media screen and (max-width: 520px) {
@@ -165,7 +165,7 @@ header {
                 flex-direction: column;
                 text-align: center;
                 margin: 0;
-                margin-bottom: 10px;
+                margin-bottom: 15px;
 
                 a {
                     text-decoration: none;
