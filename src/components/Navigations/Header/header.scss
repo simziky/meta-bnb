@@ -87,38 +87,81 @@ header {
                    
                 }
 
-                @media screen and (max-width: 768px) {
-                    display: none;
-                    position: absolute;
-                    top: 60px;
-                    left: 0;
-                    flex-direction: column;
-                    width: 100%;
-                    height:calc(100vh - 77px);
-                    background-color: red;
-
-                    ul {
                
-                    li {
-                        
-                        flex-direction: column;
-                        text-align: center;
-                        margin: 0;
+            }
 
-                    }
+            @media screen and (max-width: 768px) {
+                display: none;
+              
+               }
 
+           
+        }
+
+
+
+/**************************RESPONSIVE NAV MENU*************************/
+        .navexpanded{
+            display: contents;
+           
+          .nav {
+            position: absolute;
+            display: flex;
+            top: 60px;
+            left: 0;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height:calc(100vh - 77px);
+            background-color:#610a46;
+
+            ul {
+                list-style: none;
+       
+            li {
+                
+                color: white;
+                flex-direction: column;
+                text-align: center;
+                margin: 0;
+                margin-bottom: 10px;
+
+                a {
+                    text-decoration: none;
+                    color: white;
                 }
 
-                  .navexpanded {
-                        display: block !important;
-                    }
+            }
+        }
 
-                   }
+        .header-connect-btn {
+            button {
+                background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
+                border-radius: 10px;
+                height: 48px;
+                padding: 0px 20px 0px 20px;
+                border: none;
+                color: white;
+                font-size: 16px;
+                @extend %header-text;
+                transition: 0.5s;
+
+                &:hover {
+                    background: linear-gradient(90deg, #92156a 11.45%, #882669 11.45%);
+                    cursor: pointer;
+                }
             }
 
            
         }
 
+
+    }
+           
+
+
+        }
        
 
         .responsive-menu-icon {
@@ -148,9 +191,7 @@ header {
 
     }
 
-    @media screen and (max-width: 768px) {
-        display: block;
-       }
+    
 
 
 }

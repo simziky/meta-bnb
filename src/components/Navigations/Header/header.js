@@ -25,9 +25,8 @@ const Header = () => {
 
                 </div>
 
-                <div className="header-nav">
-                    <nav className={
-                isNavExpanded ? "navexpanded" : "nav"}>
+                <div className={isNavExpanded ? "navexpanded" : "header-nav"}>
+                    <nav className="nav">
                         <ul>
                             <li>
                                 <Link to="/" >
