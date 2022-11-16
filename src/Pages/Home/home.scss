@@ -4,8 +4,30 @@
     display: flex;
     justify-content: space-between;
 
+    @media (max-width:1100px) {
+        padding: 0px 50px 0px 50px;
+    }
+
+    @media (max-width:520px) {
+        padding: 0px 20px 0px 20px;
+       
+    }
+
     .hero-text {
         width: 40.5rem;
+        margin-right: 20px;
+
+        @media (max-width:1300px) {
+            width: 30.5rem;
+        }
+
+        @media (max-width:1100px) {
+            width: 25.5rem;
+        }
+
+        @media (max-width:875px) {
+            width: 100%;
+        }
 
        .hero-text-1 {
         p {
@@ -20,6 +42,19 @@
             bold {
                 color: #A02279;
             }
+
+            @media (max-width:1300px) {
+                font-size: 36px;
+            }
+
+            @media (max-width:875px) {
+                font-size: 56px;
+            }
+
+            @media (max-width:520px) {
+                font-size: 26px;
+               
+            }
         }
        }
 
@@ -28,6 +63,10 @@
         font-weight: 400;
         font-size: 24px;
         line-height: 35px;
+
+        @media (max-width:1300px) {
+            font-size: 20px;
+        }
        }
 
        .hero-search {
@@ -59,6 +98,11 @@
             font-size: 16px;
             line-height: 19px;
             //transform: scale(2);
+
+            @media (max-width:520px) {
+                width: 15rem;
+               
+            }
         }
        }
 
@@ -67,6 +111,10 @@
     /*************************START OF HERO IMAGE**************************/
     .home-hero-image-section {
         display: flex;
+
+        @media (max-width:875px) {
+            display: none;
+        }
         
         .hero-image-section-1 {
             display: flex;
@@ -74,8 +122,12 @@
             margin-top: 100px;
             margin-right: 10px;
             img {
-                height: 176;
+                height: 176px;
                 margin-bottom: 10px;
+
+                @media (max-width:1100px) {
+                    height: 136px;
+                }
             }
 
         }
@@ -84,8 +136,12 @@
             display: flex;
             flex-direction: column;
             img {
-                height: 176;
+                height: 176px;
                 margin-bottom: 10px;
+
+                @media (max-width:1100px) {
+                    height: 136px;
+                }
             }
         }
     }
@@ -107,6 +163,15 @@
 
         img {
             height: 50px;
+
+            @media (max-width:875px) {
+                height: 30px;
+            }
+
+            @media (max-width:520px) {
+                height: 20px;
+               
+            }
         }
     }
  }
@@ -116,6 +181,14 @@
  .home-card-main {
     padding: 0px 100px 0px 100px;
 
+    @media (max-width:870px) {
+        padding: 0px 50px 0px 50px;
+    }
+
+    @media (max-width:520px) {
+        padding: 0px 30px 0px 30px;
+    }
+
     .home-card-title-text {
         text-align: center;
         font-style: normal;
@@ -123,6 +196,16 @@
         font-size: 48px;
         line-height: 60px;
         margin-top: 58px;
+
+        @media (max-width:1100px) {
+            font-size: 38px;
+        }
+
+        @media (max-width:520px) {
+            font-size: 18px;
+            font-weight: 600;
+            margin-top: 48px;
+        }
     }
 
     .home-cards-inner {
@@ -131,6 +214,19 @@
         gap: 1.5rem;
          grid-template-columns: repeat(4, 1fr); 
          margin-top: 43px;
+
+         @media (max-width:1100px) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+         @media (max-width:870px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (max-width:520px) {
+            grid-template-columns: repeat(1, 1fr);
+           
+        }
 
         .home-card {
             //width: fit-content;
@@ -166,6 +262,15 @@
                     font-weight: 700;
                     font-size: 12px;
                     line-height: 13px;
+
+                    @media (max-width:520px) {
+                        font-size: 10px;
+                    }
+
+                }
+
+                @media (max-width:520px) {
+                    font-size: 10px;
                 }
             }
 
@@ -178,6 +283,10 @@
                 align-items: center;
                 justify-content: space-between;
                 width: 100%;
+
+                @media (max-width:520px) {
+                    font-size: 10px;
+                }
             }
 
             .ratings {
@@ -187,6 +296,10 @@
                 span {
                     font-size: 12px;
                     margin-right: 5px;
+
+                    @media (max-width:520px) {
+                        font-size: 10px;
+                    }
                 }
             }
         }
@@ -200,6 +313,11 @@
         background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
         border: 1px solid #000000;
         margin-top: 53px;
+
+        @media (max-width:870px) {
+            padding: 50px;
+        }
+
         .metabnb-nft {
             color: white;
             width: 100%;
@@ -211,10 +329,20 @@
                 font-size: 18px;
                 line-height: 35px;
 
+                @media (max-width:1200px) {
+                    width: 100%;
+                }
+
+
+
                 p:nth-child(1) {
                     font-weight: 700;
                     font-size: 48px;
                     line-height: 60px;
+
+                    @media (max-width:520px) {
+                        font-size: 30px;
+                    }
                 }
 
                 button {
@@ -236,6 +364,11 @@
                         color: white;
                         border: 1px solid white;
                     }
+
+                    @media (max-width:520px) {
+                        width: 138px;
+                        height: 38px;
+                    }
                 }
 
             }
@@ -244,6 +377,15 @@
                     width: 450px;
                     //background-color: red;
                     position: relative;
+
+                    @media (max-width:1300px) {
+                        width: 350px;
+                    }
+
+                    @media (max-width:1200px) {
+                      display: none;
+                    }
+                    
                     
                   
 
@@ -251,6 +393,10 @@
                         width: 378px;
                         z-index: 0;
                         position: absolute;
+
+                        @media (max-width:1300px) {
+                            width: 350px;
+                        }
                     }
 
                     img:nth-child(2) {
@@ -259,6 +405,10 @@
                         margin-top: 120px;
                         margin-left: -150px;
                         position: absolute;
+
+                        @media (max-width:1300px) {
+                            width: 330px;
+                        }
                     }
 
                     img:nth-child(3) {
@@ -268,6 +418,10 @@
                         //margin-left:50px ;
                         position: absolute;
                         right: 0;
+
+                        @media (max-width:1300px) {
+                            width: 330px;
+                        }
                     }
             }
         }

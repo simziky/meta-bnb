@@ -1,10 +1,25 @@
 footer {
     padding: 58px 113px 50px 113px;
     background-color:black;
+
+    @media (max-width:870px) {
+        padding: 58px 50px 50px 50px;
+       
+    }
+
+    @media (max-width:520px) {
+        padding: 58px 30px 50px 30px;
+       
+    }
     
     .footer-inner {
 
         display: flex;
+
+        @media (max-width:1100px) {
+            flex-wrap: wrap;
+           
+        }
 
     .footer-sec-1{
         margin-right: 160px;
@@ -23,12 +38,20 @@ footer {
                 margin-right: 36px;
             }
         }
+
+       
     }
 
     .footer-sec-2 {
         display: flex;
         width: 100%;
         justify-content: space-around;
+        
+
+        @media (max-width:520px) {
+            flex-wrap: wrap;
+            align-items: center;
+        }
 
         div {
 

@@ -1,6 +1,10 @@
 .place {
     padding: 0px 100px 90px 100px;
 
+    @media (max-width:1300px) {
+        padding: 0px 50px 90px 50px;
+    }
+
     .filter {
         margin-top: 130px;
 
@@ -15,8 +19,24 @@
                 font-size: 20px;
                 line-height: 25px;
 
+                @media (max-width:1000px) {
+                    display: none;
+                }
+
                 li {
                     margin-right: 3rem;
+
+                    @media (max-width:1100px) {
+                        margin-right: 2rem;
+                    }
+                }
+
+                @media (max-width:1300px) {
+                    font-size: 16px;
+                }
+
+                @media (max-width:1100px) {
+                    font-size: 13px;
                 }
             }
 
@@ -38,6 +58,16 @@
 
                 span {
                     margin-right: 40px;
+
+                    @media (max-width:1100px) {
+                        margin-right: 20px;
+                    }
+                }
+
+                @media (max-width:1100px) {
+                    height: 38px;
+                width: 140px;
+                font-size: 13px;
                 }
             }
         }
@@ -51,6 +81,19 @@
             gap: 1.5rem;
              grid-template-columns: repeat(4, 1fr); 
              margin-top: 43px;
+
+             @media (max-width:1100px) {
+                grid-template-columns: repeat(3, 1fr);
+            }
+    
+             @media (max-width:870px) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+    
+            @media (max-width:520px) {
+                grid-template-columns: repeat(1, 1fr);
+               
+            }
     
             .place-to-stay-card {
                 //width: fit-content;
